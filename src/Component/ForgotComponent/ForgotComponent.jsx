@@ -5,7 +5,7 @@ export default class Forgot extends Component{
     render(){
         return(
         <div className="d-flex justify-content-center">
-           <div class="card text-center" style={{width: 400}}>
+           <div class="cardf text-center" style={{width: 400}}>
     <div class="card-header h5 text-white "style={{backgroundColor:"#2B2A28"}}>Password Reset</div>
     <div class="card-body px-5">
         <p class="card-text py-2">
@@ -17,8 +17,8 @@ export default class Forgot extends Component{
         </div>
         <a href="#" class="btn w-100" >Reset password</a>
         <div class="d-flex justify-content-between mt-4">
-            <a class="btn" href="/login">Login</a>
-            <a class="btn" href="/register">Register</a>
+            <a class="btn" href="/lo">Login</a>
+            <a class="btn" href="/reg">Register</a>
         </div>
     </div>
 </div>

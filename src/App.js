@@ -14,6 +14,7 @@ import Feedback from './Component/FeedbackComponent/Feedback';
 import FeedbackReview from './Component/FeedbackReviewComponent/FeedbackReview';
 import Register from './Component/RegisterComponent/Register';
 import Forgot from './Component/ForgotComponent/ForgotComponent';
+import Login from './Component/LoginComponent/Login';
 
 function App() {
   return (
@@ -30,12 +31,14 @@ function App() {
         <Route path='/feedback' element={<Feedback/>}></Route>
         <Route path='/rew' element={<FeedbackReview/>}></Route>
         <Route path='/reg' element={<Register/>}></Route>
+        <Route path='/lo' element={<Login/>}></Route>
+        <Route path='/forgot' element={<Forgot/>}></Route>
       
      </Routes>
      </BrowserRouter>
    
     <footer>
-      <Forgot></Forgot>
+    
     <Footer/>
     </footer>
 
