@@ -1,8 +1,7 @@
 import axios from "axios";
 import React from "react";
 import './BatchesComponent.css';
-import {  MDBCard, MDBCardBody, MDBIcon,MDBContainer } from "mdb-react-ui-kit";
-import { MDBAnimation, } from "mdbreact";
+
 
 
 export default class Batches extends React.Component{
@@ -56,19 +55,16 @@ export default class Batches extends React.Component{
                     />
                   );
                 return(<div className="container">
-                    <MDBContainer>
-                        <MDBAnimation  type="fadeInLeft"
-                  delay=".3s"
-                  className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5">
+                   
+                 
                 
                     <div style={{backgroundImage: 'url("Background.jpg")', className:"img-fluid"  }}>
-                    <div className="cards">
+                    <div className="card">
                   
                   
-                    <MDBCard id="classic-card">
-                      <MDBCardBody className="white-text">
+                   
                         <h3 className="text-center">
-                          <MDBIcon icon="user" /> BATCHES:
+                           BATCHES:
                         </h3>
                      <form>
                        
@@ -141,13 +137,11 @@ export default class Batches extends React.Component{
 </div>
 </form>
 <button className="sub-btn"  onClick={this.registerSubmit}>Submit</button>
-</MDBCardBody>
-</MDBCard>
+
 
 </div>
        </div>
-       </MDBAnimation>
-       </MDBContainer>
+     
                 </div>)
             }
 }

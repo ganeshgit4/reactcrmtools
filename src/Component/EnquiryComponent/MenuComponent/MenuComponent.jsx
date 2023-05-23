@@ -13,10 +13,10 @@ export default class Menu extends Component{
   <div className="collapse navbar-collapse" id="navbarNav">
   <ul className="navbar-nav " style={{gap:"10px"}}>
   <li className="nav-item active">
-    <a className="nav-link e" href="/courses">Courses</a>
+    <a className="nav-link e" href="/cd">Courses</a>
   </li>
   <li className="nav-item">
-    <a className="nav-link e" href="/enquiry">Enquiry</a>
+    <a className="nav-link e" href="/enquirydata">Enquiry</a>
   </li>
   <li className="nav-item">
     <a className="nav-link e" href="/feedback">Feedback</a>
@@ -29,6 +29,9 @@ export default class Menu extends Component{
   </li>
   <li className="nav-item">
     <a className="nav-link e" href="/lo">Login</a>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link e" href="/empg">Employe</a>
   </li>
 </ul>
 

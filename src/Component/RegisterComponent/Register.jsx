@@ -58,7 +58,7 @@ changeStaet=()=>{
     render(){
         return(
             <div className="container">
-                    <div className="cardef ">
+                    <div className="card ef ">
                     <form action="">
                     <input type="text" placeholder="First Name" id="reg_First_Name"  onChange={this.registerInputValues} />
                     <input type="text" placeholder="Last Name" id="reg_Last_Name" onChange={this.registerInputValues} />

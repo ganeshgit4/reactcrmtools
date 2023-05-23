@@ -1,5 +1,6 @@
 import axios from "axios";
 import { Component } from "react";
+import './EnquiryData.css'
 
 export default class EnquiryData extends Component{
     constructor(props){
@@ -16,6 +17,7 @@ export default class EnquiryData extends Component{
 
 
         (res) =>{
+            console.log(res)
  this.setState(this.state.enquirydata=res.data)
 
         }
@@ -24,8 +26,8 @@ export default class EnquiryData extends Component{
     }
     render(){
         return(<div className="container">
-                 <div className="card">
-                <table>
+                 <div className="carde">
+                <table className="table">
                     <thead>
                         <tr>
                             <th>S.No </th>
@@ -37,6 +39,8 @@ export default class EnquiryData extends Component{
                             <th>Year of passing</th>
                             <th>Created Date</th>
                             <th>Updated Date</th>
+                            <th>Contact</th>
+                            <th>Email</th>
                             
                         </tr>
                     </thead>
@@ -52,7 +56,8 @@ export default class EnquiryData extends Component{
                     <td>{enquiry.year_of_passing}</td>
                     <td>{enquiry.created_date}</td>
                     <td>{enquiry.updated_date}</td>
-                    
+                    <td><button className="but" value={enquiry.mobile} onClick={enquiry.mobile}>Call</button></td>
+                    <td><button className="but" value={enquiry.email_id} onClick={{}}>mail</button></td>
 
                    </tr>
                    

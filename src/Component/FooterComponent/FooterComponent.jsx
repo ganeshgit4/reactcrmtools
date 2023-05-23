@@ -16,7 +16,7 @@ export default class Footer extends Component{
                 <a className="href-link" href="/courses">Courses</a><br></br>
                 <a className="href-link" href="#">Privacy policy</a>
                 </div>
-            <div className="col-3">
+            <div className="col-3 i">
                 <h2>Address</h2>
                <p>V CUBE Software Solutions Pvt.</p>
                <p>Ltd. second floor,above</p>
@@ -24,8 +24,9 @@ export default class Footer extends Component{
                <p>Phase 1 Kukatpally, Hyderabad,</p>
                <p>Telangana 500072</p>
                <p>Contact us :</p>
-               <p>+917675070124/</p>
-               <p>+919059456742</p>
+               <a className="href-link" href="#">+917675070124 </a><br />
+               <a className="href-link" href="#">+919059456742 </a>
+              
             </div>
              
               

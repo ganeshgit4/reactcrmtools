@@ -59,7 +59,7 @@ export default class Enquiry extends Component{
                     
                <div class="col-md-9 pe-5">
                
-               <input placeholder="Enter Full Name" type="text" id='full_Name' onChange={this.registerInputValues} required/>
+      Full Name         <input placeholder="Enter Full Name" type="text" id='full_Name' onChange={this.registerInputValues} required/>
 </div><br></br>
 <div class="col-md-9 pe-5">
 <input placeholder="Enter mobile number" type="number"  id='mobile' onChange={this.registerInputValues} required/>

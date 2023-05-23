@@ -15,6 +15,8 @@ import FeedbackReview from './Component/FeedbackReviewComponent/FeedbackReview';
 import Register from './Component/RegisterComponent/Register';
 import Forgot from './Component/ForgotComponent/ForgotComponent';
 import Login from './Component/LoginComponent/Login';
+import CourseData from './Component/CourseDataComponent/CourseData';
+import Employeget from './Component/EmpoyeGetComponent/Employeget';
 
 function App() {
   return (
@@ -33,12 +35,13 @@ function App() {
         <Route path='/reg' element={<Register/>}></Route>
         <Route path='/lo' element={<Login/>}></Route>
         <Route path='/forgot' element={<Forgot/>}></Route>
-      
+        <Route path='/cd' element={<CourseData/>}></Route>
+        <Route path='/enquirydata' element={<EnquiryData/>}></Route>
+        <Route path='/empg' element={<Employeget/>}></Route>
      </Routes>
      </BrowserRouter>
    
     <footer>
-    
     <Footer/>
     </footer>
 
