@@ -27,8 +27,8 @@ export default class EnquiryData extends Component{
     render(){
         return(<div className="container">
                  <div className="carde">
-                <table className="table">
-                    <thead>
+                <table className="table-responsive table-bordered">
+                    <thead className="thead-dark">
                         <tr>
                             <th>S.No </th>
                             <th>Full Name</th>

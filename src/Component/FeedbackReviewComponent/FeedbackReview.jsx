@@ -29,9 +29,9 @@ export default class FeedbackReview extends Component{
                             (test) =>
                             <div className="card cp" style={{width:'20rem'}}>
                          <p> Name :: {test.full_Name} </p>
-                         <p> {test.course_name}</p>
-                         <p> {test.faculty} </p>
-                         <p> {test.class_Experience}</p>
+                         <p> Course Name::{test.course_name}</p>
+                         <p> Faculty::{test.faculty} </p>
+                         <p> Experience after class::{test.class_Experience}</p>
                                               
                          </div>              
                      

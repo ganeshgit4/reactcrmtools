@@ -33,6 +33,9 @@ export default class Menu extends Component{
   <li className="nav-item">
     <a className="nav-link e" href="/empg">Employe</a>
   </li>
+  <li className="nav-item">
+    <a className="nav-link e" href="/inter">Interview</a>
+  </li>
 </ul>
 
   </div>

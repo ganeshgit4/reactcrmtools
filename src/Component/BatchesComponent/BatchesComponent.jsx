@@ -2,8 +2,6 @@ import axios from "axios";
 import React from "react";
 import './BatchesComponent.css';
 
-
-
 export default class Batches extends React.Component{
     constructor(){
         super()
@@ -49,28 +47,14 @@ export default class Batches extends React.Component{
                 this.setState({name:'batches'})
             }
             render(){
-                const overlay = (
-                    <div
-                      style={{ backgroundColor: "transparent" }}
-                    />
-                  );
-                return(<div className="container">
-                   
-                 
                 
-                    <div style={{backgroundImage: 'url("Background.jpg")', className:"img-fluid"  }}>
+                return(<div className="container" style={{display:"flex", alignItems:"center",justifyContent:"center"}}>
                     <div className="card">
-                  
-                  
-                   
                         <h3 className="text-center">
                            BATCHES:
                         </h3>
                      <form>
-                       
-                        
-                
-                <div className="row align-items-center py-3">
+ <div className="row align-items-center py-3">
 <div className="col-md-3 ps-5">
 <label>Batch Name</label>
 </div>
@@ -137,11 +121,7 @@ export default class Batches extends React.Component{
 </div>
 </form>
 <button className="sub-btn"  onClick={this.registerSubmit}>Submit</button>
-
-
 </div>
-       </div>
-     
                 </div>)
             }
 }

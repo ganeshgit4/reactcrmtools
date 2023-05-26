@@ -1,10 +1,7 @@
-import logo from './logo.svg';
-
 import './App.css';
 import Batches from './Component/BatchesComponent/BatchesComponent';
 import Enquiry from './Component/EnquiryComponent/EnquiryComponent';
 import Course from './Component/CourseComponent/CourseComponent';
-
 import EnquiryData from './Component/EnquiryDataComponent/EnquiryData';
 import Footer from './Component/FooterComponent/FooterComponent';
 import Menu from './Component/EnquiryComponent/MenuComponent/MenuComponent';
@@ -17,6 +14,8 @@ import Forgot from './Component/ForgotComponent/ForgotComponent';
 import Login from './Component/LoginComponent/Login';
 import CourseData from './Component/CourseDataComponent/CourseData';
 import Employeget from './Component/EmpoyeGetComponent/Employeget';
+import Interview from './Component/InterviewComponent/Interview';
+import InterviewData from './Component/InterviewDataComponent/InterviewData';
 
 function App() {
   return (
@@ -38,10 +37,13 @@ function App() {
         <Route path='/cd' element={<CourseData/>}></Route>
         <Route path='/enquirydata' element={<EnquiryData/>}></Route>
         <Route path='/empg' element={<Employeget/>}></Route>
+        <Route path='/inter' element={<Interview/>}></Route>
+        
      </Routes>
      </BrowserRouter>
    
     <footer>
+      
     <Footer/>
     </footer>
 
