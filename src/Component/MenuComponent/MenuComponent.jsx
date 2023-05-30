@@ -26,15 +26,16 @@ export default class Menu extends Component{
   </li>
   <li className="nav-item">
     <a className="nav-link e" href="/rew">Reviews</a>
-  </li>
-  <li className="nav-item">
-    <a className="nav-link e" href="/lo">Login</a>
-  </li>
+
   <li className="nav-item">
     <a className="nav-link e" href="/empg">Employe</a>
   </li>
   <li className="nav-item">
     <a className="nav-link e" href="/inter">Interview</a>
+  </li>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link e" href="/lo">Login</a>
   </li>
 </ul>
 

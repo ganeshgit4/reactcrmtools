@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Component } from "react";
 import './Inteview.css'
-import InterviewData from "../InterviewDataComponent/InterviewData";
+
 
 export default class Interview extends Component{
     constructor(){

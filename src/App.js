@@ -4,7 +4,7 @@ import Enquiry from './Component/EnquiryComponent/EnquiryComponent';
 import Course from './Component/CourseComponent/CourseComponent';
 import EnquiryData from './Component/EnquiryDataComponent/EnquiryData';
 import Footer from './Component/FooterComponent/FooterComponent';
-import Menu from './Component/EnquiryComponent/MenuComponent/MenuComponent';
+
 import { Route, Routes } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import Feedback from './Component/FeedbackComponent/Feedback';
@@ -16,6 +16,7 @@ import CourseData from './Component/CourseDataComponent/CourseData';
 import Employeget from './Component/EmpoyeGetComponent/Employeget';
 import Interview from './Component/InterviewComponent/Interview';
 import InterviewData from './Component/InterviewDataComponent/InterviewData';
+import Menu from './Component/MenuComponent/MenuComponent';
 
 function App() {
   return (
