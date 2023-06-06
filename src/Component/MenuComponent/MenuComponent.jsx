@@ -1,12 +1,15 @@
 import { Component } from "react";
 import './MenuComponent.css'
 
+
 export default class Menu extends Component{
+   
   render(){
     return(<div className="conainer-fluid" >
         <div className="container" >
         <nav className="navbar navbar-expand-lg i">
-  <a className="navbar-brand f" href="#">V Cube Crm</a>
+          
+  <b className="navbar-brand f" >V Cube Crm</b>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
@@ -34,9 +37,16 @@ export default class Menu extends Component{
     <a className="nav-link e" href="/inter">Interview</a>
   </li>
   </li>
+ {!localStorage.getItem("user") &&
   <li className="nav-item">
+  
     <a className="nav-link e" href="/lo">Login</a>
+  </li>}
+  {localStorage.getItem("user") &&   <li className="nav-item">
+    <a className="nav-link e" href="/Profile">Profile</a>
   </li>
+  
+  }
 </ul>
 
   </div>

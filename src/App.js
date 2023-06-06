@@ -17,6 +17,9 @@ import Employeget from './Component/EmpoyeGetComponent/Employeget';
 import Interview from './Component/InterviewComponent/Interview';
 import InterviewData from './Component/InterviewDataComponent/InterviewData';
 import Menu from './Component/MenuComponent/MenuComponent';
+import Profile from './Component/ProfileComponent/Profle';
+import ResetPassword from './Component/ResetpasswordComponent/ResetPassword';
+
 
 function App() {
   return (
@@ -39,6 +42,9 @@ function App() {
         <Route path='/enquirydata' element={<EnquiryData/>}></Route>
         <Route path='/empg' element={<Employeget/>}></Route>
         <Route path='/inter' element={<Interview/>}></Route>
+        <Route path='/Profile' element={<Profile/>}></Route>
+        <Route path='/reset' element={<ResetPassword/>}></Route>
+       
         
      </Routes>
      </BrowserRouter>

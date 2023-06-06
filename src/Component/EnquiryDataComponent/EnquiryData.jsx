@@ -23,6 +23,7 @@ export default class EnquiryData extends Component{
         }
 
         ) 
+      
     }
     render(){
         return(<div className="container">
@@ -56,8 +57,8 @@ export default class EnquiryData extends Component{
                     <td>{enquiry.year_of_passing}</td>
                     <td>{enquiry.created_date}</td>
                     <td>{enquiry.updated_date}</td>
-                    <td><button className="but" value={enquiry.mobile} onClick={enquiry.mobile}>Call</button></td>
-                    <td><button className="but" value={enquiry.email_id} onClick={{}}>mail</button></td>
+                    <td><p className=" btn btn-primary btn-sm" value={enquiry.mobile} onClick={enquiry.mobile}>Call</p></td>
+                    <td><p className="btn btn-primary btn-sm" value={enquiry.email_id} onClick={()=>window.location.href='mailto:enquiry.email_id'}>mail</p></td>
 
                    </tr>
                    
