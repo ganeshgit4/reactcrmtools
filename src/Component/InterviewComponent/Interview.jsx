@@ -63,54 +63,52 @@ export default class Interview extends Component{
                         <h3 className="text-center">
                            <b>INTERVIEW</b>:
                         </h3>
-                     <form>
-                        <div className="form-group">
+                     <form action="">
+                       
  
 
-<label>Interview Course</label>
-<input placeholder="Enter course name" type="text" className="form-control ei"  id='interview_course' onChange={this.registerInputValues} required/>
-<label>Company Name</label>
-<input placeholder="Enter Company name" type="text" className="form-control ei"  id='interview_company_name' onChange={this.registerInputValues} required/>
+<label for="interview">Interview Course</label>
+<input placeholder="Enter course name" type="text"  id='interview_course' onChange={this.registerInputValues} required/>
+
+<label >Company Name</label>
+<input placeholder="Enter Company name" type="text"   id='interview_company_name' onChange={this.registerInputValues} required/>
+
 <label>Job Roles</label>
-<input placeholder="Enter Job Role" type="tex" className="form-control ei" id='interview_role' onChange={this.registerInputValues} required/>
-<label>Required Experience for job</label>
-<input placeholder="Enter Experience" type="text" className="form-control ei" id='interview_experience' onChange={this.registerInputValues} required/>
+<input placeholder="Enter Job Role" type="tex" id='interview_role' onChange={this.registerInputValues} required/>
+
+<label >Required Experience for job</label>
+<input placeholder="Enter Experience" type="text" id='interview_experience' onChange={this.registerInputValues} required/>
+
 <label>Eligibility</label>
-<input placeholder="Enter job eligibility" type="text" className="form-control ei" id='interview_eligibility' onChange={this.registerInputValues} required/>
+<input placeholder="Enter job eligibility" type="text"  id='interview_eligibility' onChange={this.registerInputValues} required/>
 
+    <label >Number of vacancies</label>
+<input placeholder="Enter number of vacancies" type="number" id='no_of_vacancies' onChange={this.registerInputValues} required/>
 
-    <label>Number of vacancies</label>
-<input placeholder="Enter number of vacancies" type="number" className="form-control ei" id='no_of_vacancies' onChange={this.registerInputValues} required/>
-<label>Interview Location</label>
+<label >Interview Location</label>
+<input placeholder="Enter the location" type="text" id='interview_location' onChange={this.registerInputValues} required/>
 
+<label >Type of job</label>
+<input placeholder="Enter the job type" type="text"  id='interview_type' onChange={this.registerInputValues} required/>
 
-<input placeholder="Enter the location" type="text" className="form-control ei" id='interview_location' onChange={this.registerInputValues} required/>
+    <label>Package</label>
+<input placeholder="Enter the package" type="text" id='interview_package' onChange={this.registerInputValues} required/>
 
-<label>Type of job</label>
-<input placeholder="Enter the job type" type="text" className="form-control ei" id='interview_type' onChange={this.registerInputValues} required/>
-
-<label>Package</label>
-<input placeholder="Enter the package" type="text" className="form-control ei" id='interview_package' onChange={this.registerInputValues} required/>
 <label>Mode of interview</label>
+<input placeholder="Enter the mode of interview" type="text"  id='interview_mode' onChange={this.registerInputValues} required/>
 
 
-<input placeholder="Enter the mode of interview" type="text" className="form-control ei" id='interview_mode' onChange={this.registerInputValues} required/>
+<label >Deadline to apply</label>
 
-
-<label>Deadline to apply</label>
-
-<input placeholder="Enter deadline date & time" type="text" className="form-control ei" id='interview_deadline' onChange={this.registerInputValues} required/>
-
+<input placeholder="Enter deadline date & time" type="text"  id='interview_deadline' onChange={this.registerInputValues} required/>
 
 <label>Date of interview</label>
+<input placeholder="Enter the interview date" type="date"  id='interview_date' onChange={this.registerInputValues} required/>
+
+<label>Updated date</label>
+<input placeholder="Enter the updated date" type="date" id='interview_updated_date' onChange={this.registerInputValues} required/>
 
 
-<input placeholder="Enter the interview date" type="date" className="form-control ei" id='interview_date' onChange={this.registerInputValues} required/>
-
-<label>updated date</label>
-
-<input placeholder="Enter the updated date" type="date" className="form-control ei" id='interview_updated_date' onChange={this.registerInputValues} required/>
-</div>
 </form>
 <button className="sub-btn"  onClick={this.registerSubmit}>Submit</button>
 

@@ -31,9 +31,11 @@ handleClick=()=>{
 
 
    }
+   {localStorage.getItem("user") && 
    <a href="/lo">
    <button onClick={this.handleClick}>Logout</button>
 </a>
+    }
 
             </div>
         )

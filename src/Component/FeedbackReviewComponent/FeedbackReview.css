@@ -1,11 +1,13 @@
 .cp{
-    width: 400px;
+    width: 60rem;
     background-color: rgb(235, 247, 243);
-    border-radius: 1px black solid;
+
     box-shadow: 0px 4px 8px rgb(63, 61, 61);
     font-style: italic;
     content:normal;
     text-align: left;
+    margin-right: 5px;
+    margin-bottom: 7px;
 }
 .cp:hover{
     background-color: aqua;

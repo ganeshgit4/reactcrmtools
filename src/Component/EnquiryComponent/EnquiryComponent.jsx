@@ -1,7 +1,7 @@
 import { Component } from "react";
 import axios from "axios";
 import './EnquiryComponent.css';
-import {  MDBContainer,  MDBRow } from "mdb-react-ui-kit";
+
 export default class Enquiry extends Component{
     constructor(){
         super()
@@ -46,11 +46,10 @@ export default class Enquiry extends Component{
     render(){
         return(<div className="container" >
              <div style={{ display: 'flex',alignContent:'center' }} >
-             <MDBContainer fluid className="p-3 my-5 h-custom">
-             <MDBRow>
+            
                 <div className="col-6 space">
                 
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" class="img-fluid" alt="Sample image"/ >
+
                
            </div>
             <div className="col-6">
@@ -87,8 +86,7 @@ export default class Enquiry extends Component{
 
             </div>
             </div>
-            </MDBRow>
-            </MDBContainer>
+            
                
               </div>               
         </div>)

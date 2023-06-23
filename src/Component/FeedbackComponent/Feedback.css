@@ -1,57 +1,67 @@
-.cardex{
-        
-    width:auto;
-    text-align:center;
-    border-radius:30px;
-    background-color:rgb(230, 239, 239);
-    color:#262204;
-    padding-left: 10px;
-    
-  }
-  input{
-      margin: 15px;
-       width: 50%;
-      border-radius: 10px;
-  }
-  label{
-      padding: 10px;
-      float: left;
-      font-size: 20px;
-      margin-left: 10px;
-      text-decoration: rgb(54, 7, 206);
-  }
-  cart{
-      width: auto;
-     
-      display: inline;
-  }
-  .abc{
-      border-top: 1px black solid;
-      font-size: 25px;
-  
-  }
-  button{
-      width: 250px;
-      border-radius: 20px;
-      background-color: rgb(96, 99, 104);
+.cardefx{
    
-  }
-  .xyz{
-      align-items: flex-start;
-      padding-left: 10px;
-  }
-  textarea{
-      width: 60%;
-      margin-right: 10PX;
-      margin-left: 10PX;
-         
-  }
-  .x{
-      border-bottom: 1px black solid;
-  }
-  .xx{
-      text-align: start;
-      padding-left: 10px;
-      font-size:  px;
-      border-top: 1px black solid;
-  }
+    text-align: center;
+    width: 400px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    border: 10px double #F3BD12 ;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgb(76, 72, 74);
+   }
+   input{
+     width:90%;
+     margin:8px;
+     height:30px;
+     }
+   
+     label{
+       float:left;
+       font-size:20px;
+       margin-left:10px;
+       }
+   .box{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 90vh;
+   }
+
+.abc{
+    border-top: 1px black solid;
+    font-size: 25px;
+
+}
+button{
+    width: 250px;
+    border-radius: 20px;
+    background-color: rgb(96, 99, 104);
+ 
+}
+.xyz{
+    align-items: flex-start;
+    padding-left: 10px;
+}
+textarea{
+    width: 60%;
+    margin-right: 10PX;
+    margin-left: 10PX;
+       
+}
+.x{
+    border-bottom: 1px black solid;
+}
+.xx{
+    text-align: start;
+    padding-left: 10px;
+    font-size:  px;
+    border-top: 1px black solid;
+}
+
+.tra{
+    width: 250px;
+    height: 28px;
+    border-color:#F3BD12 ;
+    border-width: 2px;  
+    margin-left: 20px
+}

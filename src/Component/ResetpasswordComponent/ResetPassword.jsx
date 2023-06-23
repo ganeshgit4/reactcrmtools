@@ -1,7 +1,16 @@
 import { Component } from "react";
 
 export default class ResetPassword extends Component{
-
+    constructor(props){
+        super(props)
+        this.state={
+            name:'reset',
+            emp_pass:'',
+        }
+    }
+    registerInputValues=(event)=>{
+        this.setState({[event.target.id]: event.target.value})
+    }
     render(){
         return(<div className="container p-5">
             <div className="row">

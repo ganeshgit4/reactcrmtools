@@ -66,7 +66,7 @@ changeStaet=()=>{
             <div className="container">
                 <div className="row e">
                    
-               <div className="col-4 carde">
+               <div className="col-4 card">
                
                </div>
                <div className="col-6  cardf">

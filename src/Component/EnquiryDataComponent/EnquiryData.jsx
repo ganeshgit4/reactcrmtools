@@ -28,7 +28,7 @@ export default class EnquiryData extends Component{
     render(){
         return(<div className="container">
                  <div className="carde">
-                <table className="table-responsive table-bordered">
+                <table className="table-primary table-resposives">
                     <thead className="thead-dark">
                         <tr>
                             <th>S.No </th>
@@ -42,6 +42,7 @@ export default class EnquiryData extends Component{
                             <th>Updated Date</th>
                             <th>Contact</th>
                             <th>Email</th>
+                            <th>Active status</th>
                             
                         </tr>
                     </thead>
@@ -59,6 +60,8 @@ export default class EnquiryData extends Component{
                     <td>{enquiry.updated_date}</td>
                     <td><p className=" btn btn-primary btn-sm" value={enquiry.mobile} onClick={enquiry.mobile}>Call</p></td>
                     <td><p className="btn btn-primary btn-sm" value={enquiry.email_id} onClick={()=>window.location.href='mailto:enquiry.email_id'}>mail</p></td>
+                    <td><p className="btn btn-primary btn-sm" value={{}} onclick={{}}>Active</p>
+                    <p className="btn btn-primary btn-sm">Deactive</p></td>
 
                    </tr>
                    

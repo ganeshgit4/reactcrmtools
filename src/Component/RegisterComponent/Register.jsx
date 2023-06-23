@@ -57,16 +57,24 @@ changeStaet=()=>{
 
     render(){
         return(
-            <div className="container">
-                    <div className="card ef ">
-                    <form action="">
+            <div className="container" style={{justifyContent:"center",alignItems:"center",display:"flex"}}>
+                    <div className="cardef ">
+                   <form action="">
+                        <label htmlFor="">First Name</label>
                     <input type="text" placeholder="First Name" id="reg_First_Name"  onChange={this.registerInputValues} />
+                    <label htmlFor="">Last Name</label>
                     <input type="text" placeholder="Last Name" id="reg_Last_Name" onChange={this.registerInputValues} />
+                    <label htmlFor="">Email Id</label>
                     <input type="text" placeholder="Email id" id="reg_Email_Id" onChange={this.registerInputValues} />
+                    <label htmlFor="">Mobile No</label>
                     <input type="number" name="" placeholder="Mobile No" id="reg_Phone_No"  onChange={this.registerInputValues} />
+                    <label htmlFor="">Gender</label>
                     <input type="text"placeholder="Gender" id="reg_Gender" onChange={this.registerInputValues} />
+                    <label htmlFor="">Course</label>
                     <input type="text" placeholder="Course" id="reg_Course" onChange={this.registerInputValues} />
+                    <label htmlFor="">State</label>
                     <input type="text" placeholder="State" id="reg_State" onChange={this.registerInputValues} />
+                    <label htmlFor="">Training Mode</label>
                     <input type="text" placeholder="Mode Of Training" id="reg_Mode_Of_Training" onChange={this.registerInputValues} /><br />
                  <button  onClick={this.registerSubmit}>send</button>
                  </form>

@@ -5,9 +5,9 @@ import './MenuComponent.css'
 export default class Menu extends Component{
    
   render(){
-    return(<div className="conainer-fluid" >
-        <div className="container" >
-        <nav className="navbar navbar-expand-lg i">
+    return(
+        <div className="container_fluid" >
+        <nav className="navbar navbar-expand-lg i" style={{ height: "3rem"}} >
           
   <b className="navbar-brand f" >V Cube Crm</b>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@ export default class Menu extends Component{
     <a className="nav-link e" href="/feedback">Feedback</a>
   </li>
   <li className="nav-item">
-    <a className="nav-link e" href="/batches">Batches</a>
+    <a className="nav-link e" href="/batchesget">Batches</a>
   </li>
   <li className="nav-item">
     <a className="nav-link e" href="/rew">Reviews</a>
@@ -52,6 +52,6 @@ export default class Menu extends Component{
   </div>
 </nav>
 </div>
-    </div>)
+  )
 }
 }

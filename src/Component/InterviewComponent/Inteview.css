@@ -9,3 +9,20 @@
     width: 80%;
 
 }
+input{
+    width: 90%;
+    margin: 8px;
+    height: 30px;
+}
+label{
+    float: left;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    
+}

@@ -2,15 +2,15 @@ import { Component, useRef } from "react";
 import axios from "axios";
 import'./Login.css'
 export default class Login extends Component{
-  constructor(props){
-    super(props);
-    this.state={
-        name:'login',
-        emp_email:'',
-        emp_pass:''
+    constructor(props){
+        super(props);
+        this.state={
+            name:'login',
+            emp_email:'',
+            emp_pass:''
 
-    }
-  }
+        }
+      }
       
     registerInputValues=(event)=>{
         console.log("............")
@@ -20,33 +20,31 @@ export default class Login extends Component{
     registerSubmit=()=>{
         console.log("coming........")
     
-        let json={
-          emp_email:this.state.emp_email,
-          emp_pass:this.state.emp_pass
-        }
-    axios.post("http://localhost:8080/employe/login",json).then(
+    let json={
+      emp_email:this.state.emp_email,
+      emp_pass:this.state.emp_pass
+    }
+    axios.post("http://localhost:8080/Emp/login",json).then(
 
     (res)=>{
-      if(res.status==200){
-        console.log(res)
-        if(res.data.length==0){
-          console.log("plese enter the valid user information")
-         
-       
-          
-        }
-      else {
-        console.log("result of user :: "+res.data[0])
-        localStorage.setItem("user",JSON.stringify( res.data[0]))
-      }}
+        if(res.status==200){
+      console.log(res)
+      if(res.data.length==0){
+        console.log("plese enter the valid user information")
+        
       }
+    else {
+      console.log("result of user :: "+res.data[0])
+      localStorage.setItem("user",JSON.stringify( res.data[0]))
+window.location.replace("/profile")
+    }}
+    }
   )
 }
 changeStaet=()=>{
 
   console.log("clicking");
   this.setState({ name:'login'})
-    
 }
     
     loginWithLocalstorge=()=> {
@@ -56,10 +54,10 @@ console.log(localStorage.getItem("userid"));
 
   }
 
-        
+         
     render(){
         return(
-          <div className="container " style={{justifyContent:"center",alignItems:"center",display:"flex"}}>
+            <div className="container " style={{justifyContent:"center",alignItems:"center",display:"flex"}}>
                 <div className="card ">
          <div>
          
@@ -80,22 +78,19 @@ console.log(localStorage.getItem("userid"));
   </div>
 
 </form>
-<a href="/Profile">
 <button onClick={this.registerSubmit} >Submit</button>
-</a>
 
 <div class="d-flex justify-content-between mt-4" >
 <a className="btn button" style={{backgroundColor:"GrayText"}}  href="/reg">
-    <b>Register now</b>
-  </a>
-  <a className="btn button" style={{backgroundColor:"GrayText"}}  s    href="/forgot">
+    <b>Register now</b> 
+  </a>&nbsp;
+  <a className="btn button" style={{backgroundColor:"GrayText"}} href="/forgot">
     Forgot Password
   </a>
   </div>
         
                 </div>
             </div>
-       
         )
     }
 }

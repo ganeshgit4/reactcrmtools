@@ -19,7 +19,9 @@ export default class CourseData extends Component{
             }
         )
     }
+    
     render(){
+       
         return(<div className="container ">
             <div className="row t" >
             

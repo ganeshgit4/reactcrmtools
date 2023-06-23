@@ -19,6 +19,8 @@ import InterviewData from './Component/InterviewDataComponent/InterviewData';
 import Menu from './Component/MenuComponent/MenuComponent';
 import Profile from './Component/ProfileComponent/Profle';
 import ResetPassword from './Component/ResetpasswordComponent/ResetPassword';
+import Employe from './Component/EmployeComponent/Employe';
+import BatchesGetComponent from './Component/BatchesgetComponent/BatchesGetComponent';
 
 
 function App() {
@@ -27,11 +29,12 @@ function App() {
       <header>
       <Menu/>
       </header>
+     
      <BrowserRouter>
      <Routes>
      
         <Route path='/enquiry' element={<Enquiry/>}></Route>
-        <Route path='/batches' element={<Batches/>}></Route>
+        <Route path='/batches' element={<Batches/>}></Route> 
         <Route path='/courses' element={<Course/>}></Route>
         <Route path='/feedback' element={<Feedback/>}></Route>
         <Route path='/rew' element={<FeedbackReview/>}></Route>
@@ -42,8 +45,9 @@ function App() {
         <Route path='/enquirydata' element={<EnquiryData/>}></Route>
         <Route path='/empg' element={<Employeget/>}></Route>
         <Route path='/inter' element={<Interview/>}></Route>
-        <Route path='/Profile' element={<Profile/>}></Route>
+        <Route path='/profile' element={<Profile/>}></Route>
         <Route path='/reset' element={<ResetPassword/>}></Route>
+        <Route path='/batchesget' element={<BatchesGetComponent/>}></Route>
        
         
      </Routes>
